@@ -4,10 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-image: linear-gradient(90deg, rgb(203, 113, 105), rgb(26, 0, 0));
+    background-image: linear-gradient(90deg, #96305a, #ff9fc5);
 }
 #verificao{
-    background-color: #4b2828;
+    background-color: #62162f;
     border: solid white;
     border-radius: 15px;
     width: 1000px;
