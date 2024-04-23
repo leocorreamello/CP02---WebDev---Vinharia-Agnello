@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(90deg, rgb(203, 113, 105), rgb(26, 0, 0));
+}
+#verificao{
+    background-color: #4b2828;
+    border: solid white;
+    border-radius: 15px;
+    width: 1000px;
+    height: 500px;
+    padding: 10px;
+    display: block;
+    margin-top: 11%;
+    margin-left: 25%;
+    color: white;
+    max-width: 1000px;
+}
+#verificao h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+#verificao p{
+    text-align: center;
+    font-size: 15px;
+}
+.btn{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 50px;
+}
+.btn button{
+    border: solid black;
+    border-radius: 20px;
+    width: 150px; 
+    height: 100px;
+    font-size: 50px;
+}
