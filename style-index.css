@@ -47,12 +47,13 @@ footer a:hover{
     text-align: center;
 }
 .Vinhos button{
-    background-color: rgb(255, 0, 149);
+    background-color: #ff4a92;
     height: 53px;
     width: 100px;
     margin-top: 15px;
     font-size: 20px;
     border: solid white;
+    margin-bottom: 15px;
 }
 .Vinhos button:hover{
     background-color: rgb(172, 172, 172);
@@ -82,4 +83,11 @@ footer a:hover{
 .vinho4{
     border: solid black 5px;
 }
-
+#Fotos img{
+    margin-left: 12px;
+    margin-bottom: 40px;
+    border: solid white;
+}
+.rodape{
+    background-image: linear-gradient(90deg, #a30044, #ff4a92)
+}
