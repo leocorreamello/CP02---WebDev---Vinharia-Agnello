@@ -23,34 +23,41 @@ var lista1 = document.getElementById("lista1");
 var lista2 = document.getElementById("lista2");
 var lista3 = document.getElementById("lista3");
 var lista4 = document.getElementById("lista4");
+var msgCup = document.getElementById("msgCupom");
 var preco = 0;
-function btnDesconto(){
-    var desconto = document.getElementById("desconto").value;
-    if (desconto === "FIAP2024"){
-        preco = preco - (preco * 0.10);
-    }
-}
 function btnCompar1(){
     var quantidade1 = parseInt(document.getElementById("qtd-v1").value);
     preco += quantidade1 * 129;
     lista1.innerText = `Vinho Seco Natural Tinto Cântico - x${quantidade1}`;
-    carrinho.innerText = `Valor Total: R$ ${preco},00`;
+    carrinho.innerText = `Valor Total: R$ ${preco}`;
 }
 function btnCompar2(){
     var quantidade2 = parseInt(document.getElementById("qtd-v2").value);
     preco += quantidade2 * 99;
     lista2.innerText = `Vinho Seco Natural Rosé Matias - x${quantidade2}`;
-    carrinho.innerText = `Valor Total: R$ ${preco},00`;
+    carrinho.innerText = `Valor Total: R$ ${preco}`;
 }
 function btnCompar3(){
     var quantidade3 = parseInt(document.getElementById("qtd-v3").value);
     preco += quantidade3 * 180;
     lista3.innerText = `Vinho Seco Natural Branco - x${quantidade3}`;
-    carrinho.innerText = `Valor Total: R$ ${preco},00`;
+    carrinho.innerText = `Valor Total: R$ ${preco}`;
 }
 function btnCompar4(){
     var quantidade4 = parseInt(document.getElementById("qtd-v4").value);
     preco += quantidade4 * 99;
     lista4.innerText = `Vinho Orgânico Tinto - x${quantidade4}`;
-    carrinho.innerText = `Valor Total: R$ ${preco},00`;
+    carrinho.innerText = `Valor Total: R$ ${preco}`;
+}
+function btnDesconto() {
+    var desconto = document.getElementById("desconto").value;
+    if (desconto === "FIAP2024") {
+        // Aplicar desconto de 10%
+        var precoDesconto = preco * 0.9; // Preço com desconto de 10%
+        preco = precoDesconto;
+        carrinho.innerText = `Valor Total: R$ ${preco}`;
+        msgCup.innerText = `Cupom de 10% aplicado com sucesso`;
+    } else {
+        msgCup.innerText = `Cupom inválido`;
+    }
 }
