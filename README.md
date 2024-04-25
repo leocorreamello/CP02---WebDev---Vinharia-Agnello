@@ -16,7 +16,9 @@ Neste site podemos ver
 </ul>
 
 ## Tecnologias e Ferramentas ##
-<img src="" alt="">
-<img src="" alt="">
-<img src="" alt="">
-<img src="" alt="">
+<ul>
+  <li>Visual Studio Code</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Java Script</li>
+</ul>
