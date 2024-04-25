@@ -26,31 +26,43 @@
                     <p>Vinho Seco Natural Tinto Cântico - <br>Cabernet Sauvignon, 2019</p>
                     <p>R$ 129,00</p>
                     <input type="number" id="qtd-v1" placeholder="Qtd">
-                    <button onclick="btnCompar()">Comprar</button>
+                    <button onclick="btnCompar1()">Comprar</button>
                 </div>
                 <div class="vinho2">
                     <img src="img/vinho2.webp" alt="Vinho Seco Natural Rosé Matias Morcos - Criolla, 2021">
                     <p>Vinho Seco Natural Rosé Matias<br> Morcos - Criolla, 2021</p>
                     <p>R$ 99,00</p>
                     <input type="number" id="qtd-v2" placeholder="Qtd">
-                    <button onclick="btnCompar()">Comprar</button>
+                    <button onclick="btnCompar2()">Comprar</button>
                 </div>
                 <div class="vinho3">
                     <img src="img/vinho3.webp" alt="Vinho Seco Natural Branco Cântico - Chardonnay, 2020">
                     <p>Vinho Seco Natural Branco - <br>Chardonnay, 2020</p>
                     <p>R$ 180,00</p>
                     <input type="number" id="qtd-v3" placeholder="Qtd">
-                    <button onclick="btnCompar()">Comprar</button>
+                    <button onclick="btnCompar3()">Comprar</button>
                 </div>
                 <div class="vinho4">
                     <img src="img/vinho4.webp" alt="Vinho Orgânico Tinto Guardian De Los Vinedos - Cabernet Sauvignon, 2022">
                     <p>Vinho Orgânico Tinto - <br>Cabernet Sauvignon, 2022</p>
                     <p>R$ 99,00</p>
                     <input type="number" id="qtd-v4" placeholder="Qtd">
-                    <button onclick="btnCompar()">Comprar</button>
-                </div>
+                    <button onclick="btnCompar4()">Comprar</button>
+                </div> 
             </div>
         </section>
+        <div class="carrinho">
+            <h3>Finalizar Comprar</h3>
+            <p>Carrinho:</p>
+            <p id="lista1" style="font-size: 15px;"></p>
+            <p id="lista2" style="font-size: 15px;"></p>
+            <p id="lista3" style="font-size: 15px;"></p>
+            <p id="lista4" style="font-size: 15px;"></p>
+            <p id="carrinho" style="margin-top: 30px;"></p>
+            <p style="font-size: 15px;">Cupom de Desconto:</p>
+            <input type="text" id="desconto" placeholder="Cupom Desconto" style="text-align: center; color: black;">
+            <button style="margin-top: 18px; background-color: #ff4a92; border: none; width: 50px; height: 20px;" onclick="btnDesconto()">Aplicar</button>
+        </div>
         <br><br><br>
         <hr>
         <section id="Fotos">
@@ -68,19 +80,12 @@
             <h1>Sobre</h1>
             <h3 style="text-align: center;">Hístoria</h3>
             <p style="text-align: center; padding: 25px;">Na tranquila cidade de Vale Verde, aninhada entre vinhas ondulantes e montanhas cobertas de bosques, ficava a Vinheria do Agnello. Agnello, um homem de sorriso gentil e olhos brilhantes, era conhecido por seus vinhos excepcionais e pela hospitalidade calorosa que oferecia a todos que cruzavam sua porta. Junto a ele, trabalhava sua filha, Sofia, uma jovem encantadora com uma paixão contagiante pelo mundo dos vinhos.
-
             Agnello havia herdado a vinheria de seu pai, mantendo viva a tradição familiar de produzir vinhos que capturavam a essência da região. Seus vinhedos eram cultivados com carinho, e cada safra era tratada como uma obra de arte. Sofia cresceu entre barris de carvalho e videiras, absorvendo o conhecimento de seu pai com entusiasmo. Ela compartilhava o amor de Agnello pela vinificação e pela magia de transformar uvas em algo extraordinário.
-                
-            A vinheria era mais do que um negócio para Agnello e Sofia; era um lugar de encontros e celebrações. Locais e visitantes vinham de longe para experimentar os vinhos exclusivos e participar das degustações organizadas por Sofia, que tinha um talento especial para explicar as complexidades e os sabores sutis de cada vinho.
-                
-            Certo dia, durante a colheita de outono, quando as uvas estavam em seu ápice de maturação, uma tempestade repentina ameaçou destruir parte da colheita. Agnello e Sofia, junto com seus trabalhadores, lutaram contra o relógio para colher as uvas restantes antes que fosse tarde demais. Enquanto a chuva caía ao redor deles, Sofia estava lá, incansável e determinada, seguindo os passos de seu pai.
-                
-            Com o sucesso da colheita, veio a expectativa da nova safra. Agnello e Sofia trabalharam arduamente na vinificação, cuidando de cada detalhe, desde a fermentação até o envelhecimento. Enquanto isso, a vinheria continuava a atrair mais visitantes e a ganhar reputação, não apenas pelos vinhos excepcionais, mas pela história cativante por trás deles.
-                
-            Agnello, sempre olhando para o futuro, começou a planejar a expansão da vinheria, sonhando em exportar seus vinhos para além das fronteiras da região. Sofia, com sua visão contemporânea e conhecimento do mercado, colaborou entusiasticamente nesse projeto.
-                
-            À medida que as estações passavam e os vinhos envelheciam nas adegas da vinheria, o vínculo entre Agnello e Sofia se fortalecia. Não era apenas uma parceria de negócios; era um elo de amor e respeito mútuo, refletido em cada garrafa que produziam juntos.
-                
+            A vinheria era mais do que um negócio para Agnello e Sofia; era um lugar de encontros e celebrações. Locais e visitantes vinham de longe para experimentar os vinhos exclusivos e participar das degustações organizadas por Sofia, que tinha um talento especial para explicar as complexidades e os sabores sutis de cada vinho.  
+            Certo dia, durante a colheita de outono, quando as uvas estavam em seu ápice de maturação, uma tempestade repentina ameaçou destruir parte da colheita. Agnello e Sofia, junto com seus trabalhadores, lutaram contra o relógio para colher as uvas restantes antes que fosse tarde demais. Enquanto a chuva caía ao redor deles, Sofia estava lá, incansável e determinada, seguindo os passos de seu pai. 
+            Com o sucesso da colheita, veio a expectativa da nova safra. Agnello e Sofia trabalharam arduamente na vinificação, cuidando de cada detalhe, desde a fermentação até o envelhecimento. Enquanto isso, a vinheria continuava a atrair mais visitantes e a ganhar reputação, não apenas pelos vinhos excepcionais, mas pela história cativante por trás deles.  
+            Agnello, sempre olhando para o futuro, começou a planejar a expansão da vinheria, sonhando em exportar seus vinhos para além das fronteiras da região. Sofia, com sua visão contemporânea e conhecimento do mercado, colaborou entusiasticamente nesse projeto.  
+            À medida que as estações passavam e os vinhos envelheciam nas adegas da vinheria, o vínculo entre Agnello e Sofia se fortalecia. Não era apenas uma parceria de negócios; era um elo de amor e respeito mútuo, refletido em cada garrafa que produziam juntos.  
             Assim, a Vinheria do Agnello tornou-se mais do que um lugar para saborear vinhos finos; era uma história viva, tecida com dedicação, paixão e alegria compartilhada. E, no coração dessa história, Agnello e Sofia continuavam a brindar à vida, à família e ao amor pelo vinho, perpetuando uma tradição que transcendia gerações.</p>
             <h3 style="text-align: center;">Redes</h3>
             <br>
