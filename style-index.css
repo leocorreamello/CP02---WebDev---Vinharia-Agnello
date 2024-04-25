@@ -95,10 +95,17 @@ footer a:hover{
     padding: 30px;
     margin-left: 2.6%;
     font-size: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 80px;
     border: solid black;
     margin-top: 25px;
     max-width: 16%;
     border-width: 5px;
-    height: 250px;
+    height: 300px;
+}
+#contato{
+    text-align: center;
+    
+}
+#contato input{
+    color: black;
 }

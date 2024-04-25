@@ -15,6 +15,7 @@
             <a href="#Vinhos">Vinhos</a>
             <a href="#Fotos">Fotos</a>
             <a href="#Sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </div>
     </footer>
     <main id="main">
@@ -63,17 +64,18 @@
             <input type="text" id="desconto" placeholder="Cupom Desconto" style="text-align: center; color: black;">
             <button style="margin-top: 13px; background-color: #ff4a92; border: none; width: 50px; height: 20px;" onclick="btnDesconto()">Aplicar</button>
             <p id="msgCupom" style="font-size: 15px; color: #ff4a92;"></p>
+            <button style="margin-top: 13px; background-color: #ff4a92; border: none; width: 100px; height: 50px; font-size: 20px;" onclick="btnFinalizar()">Finalizar</button>
         </div>
         <br><br><br>
         <hr>
         <section id="Fotos">
             <h1>Fotos</h1>
-            <img src="img/lugar1.webp" alt="">
-            <img src="img/lugar2.webp" alt="">
-            <img src="img/lugar3.webp" alt="">
-            <img src="img/lugar4.webp" alt="">
-            <img src="img/lugar5.webp" alt="">
-            <img src="img/lugar6.webp" alt="">
+            <img src="img/lugar1.webp" alt="paisagem1">
+            <img src="img/lugar2.webp" alt="paisagem2">
+            <img src="img/lugar3.webp" alt="paisagem3">
+            <img src="img/lugar4.webp" alt="paisagem4">
+            <img src="img/lugar5.webp" alt="paisagem5">
+            <img src="img/lugar6.webp" alt="paisagem6">
         </section>
         <br>
         <hr>
@@ -94,6 +96,27 @@
             <a href="#" style="margin-left: 20px; color: cyan;">Twitter</a>
             <a href="#" style="margin-left: 20px; color: blue;">Facebook</a>
             <br><br><br>
+            <a href="https://www.linkedin.com/in/leocorreamello/" style="margin-left: 45.8%; color: rgb(255, 196, 0);" target="_blank">Linkedin</a>
+            <a href="https://github.com/leocorreamello" style="margin-left: 20px; color: rgb(255, 196, 0);" target="_blank">GitHub</a>
+            <br><br><br>
+            <hr>
+            <div id="contato">
+                <br><br><br>
+                <h2>Entre em Contato</h2>
+                <br>
+                <form action="/submit-form" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" id="assunto" name="assunto" required><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea style="color: black;" id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                <input onclick="btnEnviarForm()" type="button" value="Enviar" style="height: 50px; width: 100px; font-size: 20px; background-color: #ff4a92; border: none; color: white;">
+                <br><br><br>
+            </div>
+    </form>
         </section>
     </main>
     <div class="rodape">

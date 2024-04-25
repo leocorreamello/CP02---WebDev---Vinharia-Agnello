@@ -49,15 +49,21 @@ function btnCompar4(){
     lista4.innerText = `Vinho Orgânico Tinto - x${quantidade4}`;
     carrinho.innerText = `Valor Total: R$ ${preco}`;
 }
-function btnDesconto() {
+function btnDesconto(){
     var desconto = document.getElementById("desconto").value;
     if (desconto === "FIAP2024") {
         // Aplicar desconto de 10%
         var precoDesconto = preco * 0.9; // Preço com desconto de 10%
         preco = precoDesconto;
-        carrinho.innerText = `Valor Total: R$ ${preco}`;
+        carrinho.innerText = `Valor Total: R$ ${preco.toFixed(2)}`;
         msgCup.innerText = `Cupom de 10% aplicado com sucesso`;
     } else {
         msgCup.innerText = `Cupom inválido`;
     }
+}
+function btnFinalizar(){
+    alert("Compra realizada com Sucesso!!!");
+}
+function btnEnviarForm(){
+    alert("Formulário enviado!");
 }
