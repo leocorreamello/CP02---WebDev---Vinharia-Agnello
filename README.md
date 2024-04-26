@@ -1,7 +1,7 @@
 ## Checkpoint 02 - WEB DEVELOPMENT - Caso Vinharia Agnello ##
 <p>@FIAP - WEB DEVELOPMENT - ESPV - Paulista (Noturno)</p>
 <h4>PARTICIPANTES</h4>
-<p>Leonardo Correa de Mello | RM555573</p> 
+<p>Leonardo Correa de Mello | RM555573</p>
 
 ## Sobre ##
 Neste trabalho eu realizei a criação de um site do zero, para uma vinheria fictícia.
